@@ -58,8 +58,9 @@
 #X obj 808 226 r digital3;
 #X obj 808 250 change;
 #X obj 808 274 sel 0;
-#X msg 699 722 \; pd dsp 1;
+#X msg 699 786 \; pd dsp 1;
 #X obj 702 674 loadbang;
+#X obj 702 698 delay 1000;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
 #X connect 3 0 5 0;
@@ -113,4 +114,5 @@
 #X connect 54 0 55 0;
 #X connect 55 0 56 0;
 #X connect 56 0 29 0;
-#X connect 58 0 57 0;
+#X connect 58 0 59 0;
+#X connect 59 0 57 0;
