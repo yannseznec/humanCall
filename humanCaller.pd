@@ -1,5 +1,5 @@
-#N struct 1073-scope float x float y float x1 float y1 float c1 float c2 float c3 float c4 array vector-min 1073-scope-element array vector-max 1073-scope-element float curx;
-#N struct 1073-scope-element float y;
+#N struct 1152-scope float x float y float x1 float y1 float c1 float c2 float c3 float c4 array vector-min 1152-scope-element array vector-max 1152-scope-element float curx;
+#N struct 1152-scope-element float y;
 #N canvas 0 54 1354 671 12;
 #X obj 100 414 ys.granular_main 1 sounds/Caroline.wav;
 #X obj 496 71 netreceive -u -b -f 2222;
@@ -55,7 +55,6 @@
 #X obj 594 332 moses 80;
 #X obj 814 362 delay 50;
 #X obj 395 324 print button;
-#X obj 753 750 teensy_comport_destroyer;
 #X obj 808 226 r digital3;
 #X obj 808 250 change;
 #X obj 808 274 sel 0;
@@ -87,6 +86,7 @@
 #X connect 26 0 41 0;
 #X connect 28 0 50 0;
 #X connect 29 0 28 0;
+#X connect 29 0 53 0;
 #X connect 31 0 30 0;
 #X connect 33 0 32 0;
 #X connect 33 0 52 0;
@@ -108,6 +108,6 @@
 #X connect 51 0 37 0;
 #X connect 51 1 47 0;
 #X connect 52 0 35 0;
+#X connect 54 0 55 0;
 #X connect 55 0 56 0;
-#X connect 56 0 57 0;
-#X connect 57 0 29 0;
+#X connect 56 0 29 0;
