@@ -1,5 +1,5 @@
-#N struct 1004-scope float x float y float x1 float y1 float c1 float c2 float c3 float c4 array vector-min 1004-scope-element array vector-max 1004-scope-element float curx;
-#N struct 1004-scope-element float y;
+#N struct 1023-scope float x float y float x1 float y1 float c1 float c2 float c3 float c4 array vector-min 1023-scope-element array vector-max 1023-scope-element float curx;
+#N struct 1023-scope-element float y;
 #N canvas 0 54 1354 671 12;
 #X obj 100 414 ys.granular_main 1 sounds/Caroline.wav;
 #X obj 496 71 netreceive -u -b -f 2222;
@@ -101,7 +101,6 @@
 #X connect 26 0 41 0;
 #X connect 28 0 50 0;
 #X connect 29 0 28 0;
-#X connect 29 0 53 0;
 #X connect 31 0 30 0;
 #X connect 33 0 32 0;
 #X connect 33 0 52 0;
