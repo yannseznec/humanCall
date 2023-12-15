@@ -1,5 +1,5 @@
-#N struct 1061-scope float x float y float x1 float y1 float c1 float c2 float c3 float c4 array vector-min 1061-scope-element array vector-max 1061-scope-element float curx;
-#N struct 1061-scope-element float y;
+#N struct 1071-scope float x float y float x1 float y1 float c1 float c2 float c3 float c4 array vector-min 1071-scope-element array vector-max 1071-scope-element float curx;
+#N struct 1071-scope-element float y;
 #N canvas 0 54 1354 671 12;
 #X obj 496 71 netreceive -u -b -f 2222;
 #X obj 495 114 oscparse -f;
@@ -68,6 +68,9 @@
 #X obj 734 577 + 0.2;
 #X obj 883 499 random 80;
 #X obj 884 531 + 20;
+#X obj 962 750 s 1-volume_rcv;
+#X msg 963 717 1.5;
+#X obj 969 681 loadbang;
 #X connect 0 0 1 0;
 #X connect 1 0 2 0;
 #X connect 2 0 4 0;
@@ -133,3 +136,5 @@
 #X connect 64 0 61 0;
 #X connect 65 0 66 0;
 #X connect 66 0 17 0;
+#X connect 68 0 67 0;
+#X connect 69 0 68 0;
